@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Document</title>
+</head>
+<body>
+    <form name="calculadora">
+    <table border="3">
+        <tr>
+            <td colspan="5"><input type="text" name="visor" disabled></td>
+
+        </tr>
+        <tr>
+            <td><input type="button" value="1" onclick="ingNumero(this.value)"></td>
+            <td><input type="button" value="2" onclick="ingNumero(this.value)"></td>
+            <td><input type="button" value="3" onclick="ingNumero(this.value)"></td>
+            <td><input type="button" value="+" onclick="ingNumero(this.value)"></td>
+            <td><input type="button" value="CE" onclick="limpiarP()"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="4" onclick="ingNumero(this.value)"></td>
+            <td><input type="button" value="5" onclick="ingNumero(this.value)"></td>
+            <td><input type="button" value="6" onclick="ingNumero(this.value)"></td>
+            <td><input type="button" value="-" onclick="ingNumero(this.value)"></td>
+            <td><input type="button" value="^" ></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="7" onclick="ingNumero(this.value)"></td>
+            <td><input type="button" value="8" onclick="ingNumero(this.value)"></td>
+            <td><input type="button" value="9" onclick="ingNumero(this.value)"></td>
+            <td><input type="button" value="/" onclick="ingNumero(this.value)"></td>
+            <td><input type="button" value="&radic;" ></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="." onclick="ingNumero(this.value)"></td>
+            <td><input type="button" value="0" onclick="ingNumero(this.value)"></td>
+            <td><input type="button" value="D" onclick="borrar()"></td>
+            <td><input type="button" value="*" onclick="ingNumero(this.value)"></td>
+            <td><input type="button" value="=" onclick="resultado()"></td>
+        </tr>
+    </table>
+</form>
+<div class="cuerpo">
+    <div class="arriba"><input type="text" name="visor" disabled></div>
+    
+        <div class="uno"><input type="button" value="1" onclick="ingNumero(this.value)"></div>
+        <div class="dos"><input type="button" value="2" onclick="ingNumero(this.value)"></div>
+        <div class="tres"><input type="button" value="3" onclick="ingNumero(this.value)"></div>
+        <div class="suma"><input type="button" value="+" onclick="ingNumero(this.value)"></div>
+        <div class="limpiar"><input type="button" value="CE" onclick="limpiarP()"></div>
+
+        <div class="cuatro"><input type="button" value="4" onclick="ingNumero(this.value)"></div>
+        <div class="cinco"><input type="button" value="5" onclick="ingNumero(this.value)"></div>
+        <div class="seis"><input type="button" value="6" onclick="ingNumero(this.value)"></div>
+        <div class="resta"><input type="button" value="-" onclick="ingNumero(this.value)"></div>
+        <div class="potencia"><input type="button" value="^" onclick="potencia()"></div>
+
+        <div class="siete"><input type="button" value="7" onclick="ingNumero(this.value)"></div>
+        <div class="ocho"><input type="button" value="8" onclick="ingNumero(this.value)"></div>
+        <div class="nueve"><input type="button" value="9" onclick="ingNumero(this.value)"></div>
+        <div class="division"><input type="button" value="/" onclick="ingNumero(this.value)"></div>
+        <div class="raiz"><input type="button" value="&radic;" onclick="raiz()"></div>
+
+        <div class="punto"><input type="button" value="." onclick="ingNumero(this.value)"></div>
+        <div class="cero"><input type="button" value="0" onclick="ingNumero(this.value)"></div>
+        <div class="borrar"><input type="button" value="D" onclick="ingNumero(this.value)"></div>
+        <div class="multiplicar"><input type="button" value="*" onclick="ingNumero(this.value)"></div>
+        <div class="resultado"><input type="button" value="=" onclick="ingNumero(this.value)"></div>
+        
+    
+</div>
+</body>
+</html>
