@@ -5,18 +5,18 @@ body{
     background: #0b0b0c;
     display: grid;
     grid-template-columns: 20% 60% 20%;
-    grid-template-rows: 30% 40% 30%;
+    grid-template-rows: 30% 50% 20%;
 }
 
 .cuerpo{
     place-items: center;
     grid-column: 2/3;
     grid-row: 2/3;
-    
+    background: rgb(36, 46, 51);
     display: grid;
     grid-template-columns: repeat(5, 20%) ;
     grid-template-rows: repeat(5, 20%);
-    
+    border-radius: 15px;
 }
 .arriba{
     display: flex;
@@ -41,8 +41,9 @@ input[type="button"]{
    transition: 0.4s;
 }
 input[type="text"]{
+    margin-top: 10px;
     width: 90%;
-    height: 90%;
+    height: 80%;
     font-size: 20px;
     border-radius: 5px;
     background:#f747ae;
